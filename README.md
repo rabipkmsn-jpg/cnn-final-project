@@ -93,3 +93,9 @@ The spatial features of CIFAR-10 images (32x32x3) are better preserved by Convol
 | Truck | 0.89 | 0.91 | 0.90 |
 
 **Overall Accuracy: 82%**
+
+## 🏆 Achievements
+- **Architecture Superiority:** Quantified the 35%+ accuracy gap between CNN and ANN architectures.
+- **Robust Regularization:** Successfully mitigated overfitting through Dropout (0.2 - 0.5) and Data Augmentation.
+- **Automated Inference:** Developed `main.py` for rapid multi-model performance benchmarking.
+- **Professional Deployment:** Organized a complex deep learning project into a modular, production-ready directory structure.
