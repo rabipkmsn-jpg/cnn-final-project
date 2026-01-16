@@ -1,4 +1,4 @@
-# 🖼️ CIFAR-10 Image Classification: CNN vs ANN Comparative Study
+# 🖼️ CIFAR-10 Image Classification: CNN vs ANN Comparative Study 
 **Aligning with UN Sustainable Development Goal 9: Industry, Innovation, and Infrastructure**
 
 ## 📝 Introduction
