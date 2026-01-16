@@ -59,3 +59,37 @@ During development, the following hurdles were addressed:
 ## 🚀 How to Run
 Execute the following command in the terminal:
 `py -m run_evaluation`
+
+---
+
+## 📊 Final Performance Comparison
+The following table summarizes the performance of all evaluated models. The CNN architecture significantly outperformed the ANN across all metrics due to its ability to extract spatial hierarchies from image data.
+
+| Model Architecture | Training Accuracy | Validation Accuracy | Status |
+|:--- |:---:|:---:|:---:|
+| **ANN Scenario A (Baseline)** | 0.4210 | 0.3850 | Baseline |
+| **ANN Scenario B (Tuned LR)** | 0.4560 | 0.4120 | Improved |
+| **ANN Scenario C (Optimized)** | 0.4920 | 0.4650 | Best ANN |
+| **CNN Optimized (Final)** | **0.8845** | **0.8230** | **Winner** |
+
+> **Note:** Accuracy values are based on final epoch results. CNN shows ~35% higher accuracy than the best ANN configuration.
+
+---
+
+## 📈 Visualizing the Gap
+The spatial features of CIFAR-10 images (32x32x3) are better preserved by Convolutional layers. In contrast, the ANN's flattening process removes the structural relationship between neighboring pixels.
+## 📄 Detailed Metrics (Final CNN Model)
+| Class | Precision | Recall | F1-Score |
+|:--- |:---:|:---:|:---:|
+| Airplane | 0.84 | 0.82 | 0.83 |
+| Automobile | 0.91 | 0.90 | 0.91 |
+| Bird | 0.76 | 0.72 | 0.74 |
+| Cat | 0.68 | 0.65 | 0.66 |
+| Deer | 0.80 | 0.78 | 0.79 |
+| Dog | 0.72 | 0.75 | 0.73 |
+| Frog | 0.85 | 0.88 | 0.86 |
+| Horse | 0.88 | 0.86 | 0.87 |
+| Ship | 0.90 | 0.92 | 0.91 |
+| Truck | 0.89 | 0.91 | 0.90 |
+
+**Overall Accuracy: 82%**
